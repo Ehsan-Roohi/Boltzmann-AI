@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "boltzmann-ai"
+version = "0.1.0"
+description = "Reference cases and publications on rarefied gas dynamics"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+license-files = ["third-party/FlowMLLab-LICENSE"]
+authors = [{name = "Ehsan Roohi"}]
+
+[project.scripts]
+boltzmann-ai = "boltzmann_ai.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
