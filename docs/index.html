@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Ehsan Roohi's research in rarefied gas dynamics, molecular simulations and scientific machine learning.">
+<title>Boltzmann-AI | Ehsan Roohi</title>
+<style>
+:root{color-scheme:light;--ink:#1d282b;--muted:#52636a;--wine:#841737;--line:#ced7d4;--paper:#fcfcf9;font-family:Inter,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--paper)}
+*{box-sizing:border-box}body{margin:0}a{color:inherit;text-underline-offset:.25em}a:focus-visible,video:focus-visible{outline:3px solid var(--wine);outline-offset:5px}
+header,main,footer{max-width:1500px;margin:auto;padding-inline:clamp(20px,5vw,86px)}
+header{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:18px}header img{display:block;width:clamp(153px,18vw,214px);height:auto}
+nav{display:flex;gap:clamp(16px,3.5vw,54px);font-weight:550;font-size:.95rem}nav a,footer a{text-decoration:none}nav a:hover,footer a:hover{text-decoration:underline}
+.intro{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,.65fr);align-items:end;gap:clamp(20px,5vw,90px);margin:clamp(24px,3.3vw,52px) 0 clamp(20px,2.1vw,36px)}
+h1{font-family:"Baskerville","Georgia",serif;font-size:clamp(2.2rem,4.4vw,4.85rem);letter-spacing:-.047em;font-weight:500;line-height:.99;margin:0;text-wrap:balance}
+.intro p{margin:0;color:var(--muted);line-height:1.48;max-width:44ch;font-size:clamp(.96rem,1.2vw,1.16rem)}
+figure{margin:0}video{width:100%;height:auto;display:block;aspect-ratio:16/9;background:#f4f6f4;border:1px solid var(--line);border-radius:3px}
+figcaption{display:flex;justify-content:space-between;align-items:baseline;gap:18px;color:var(--muted);padding:12px 0 21px;font-size:.91rem;line-height:1.48}figcaption a{white-space:nowrap}
+#research{padding:clamp(26px,5vw,70px) 0;display:grid;grid-template-columns:minmax(160px,.72fr) minmax(0,2fr);gap:6vw;border-top:1px solid var(--line)}
+h2{font:500 clamp(2rem,3.7vw,3.6rem)/1.12 Georgia,serif;letter-spacing:-.04em;margin:0}
+.article{padding:0 0 1.35rem;margin-bottom:1.35rem;border-bottom:1px solid var(--line)}.article:last-child{margin-bottom:0}h3{font-size:clamp(1.15rem,1.8vw,1.7rem);line-height:1.2;font-weight:600;margin:0 0 .55rem}h3 a{text-decoration:none}h3 a:hover{text-decoration:underline}
+.article p{margin:0;color:var(--muted);line-height:1.55}footer{border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;padding-block:22px 32px;font-size:.9rem;color:var(--muted)}
+@media(max-width:680px){header{height:61px}nav{font-size:.85rem;gap:15px}.intro{grid-template-columns:1fr;gap:12px}.intro p{max-width:48ch}figcaption{display:block;font-size:.84rem}figcaption a{display:inline-block;margin-top:5px}#research{grid-template-columns:1fr;gap:22px}footer{flex-wrap:wrap}}
+</style>
+</head>
+<body>
+<header><a href="#top" aria-label="Boltzmann-AI home"><img src="assets/wordmark.png" alt="Boltzmann-AI"></a><nav aria-label="Main"><a href="#research">Research</a><a href="https://github.com/Ehsan-Roohi/Boltzmann-AI">GitHub</a></nav></header>
+<main id="top">
+<section class="intro" aria-labelledby="vision"><h1 id="vision">From molecular collisions to spacecraft design and flight</h1><p>Ehsan Roohi studies how rarefied gases move, and how machine learning can extend the reach of molecular simulations.</p></section>
+<figure><video id="reel" controls muted loop playsinline preload="metadata" poster="assets/hero.jpg" aria-label="Boltzmann-AI scientific film" aria-describedby="film-note"><source src="assets/hero.mp4" type="video/mp4"><a href="assets/hero.mp4">Open the film</a></video><figcaption id="film-note"><span>Two DSMC simulations show gas temperature in a lid-driven cavity and in Mach 5 argon flow past a cylinder. The final shot shows an atmospheric entry capsule concept.</span><a href="assets/hero.mp4" download="Boltzmann-AI.mp4">Download the film</a></figcaption></figure>
+<section id="research" aria-labelledby="research-title"><h2 id="research-title">Selected research</h2><div>
+<article class="article"><h3><a href="https://arxiv.org/abs/2611.31996">Learning the structure of a normal shock</a></h3><p>A physics-informed neural network resolves nonequilibrium velocity distributions across a stationary shock. Ehsan Roohi, arXiv preprint, 2026.</p></article>
+<article class="article"><h3><a href="https://doi.org/10.1063/5.0334590">Neural networks for rarefied gas dynamics</a></h3><p>The Mach 5 cylinder in the film is a DSMC reference case from this study of relaxation, shock waves, and hypersonic cylinder flow. <i>Physics of Fluids</i>, 2026.</p></article>
+<article class="article"><h3><a href="https://doi.org/10.1016/j.jcp.2026.115261">Neural closures for Fokker–Planck simulation</a></h3><p>A neural surrogate evaluates a kinetic closure inside a particle solver. The internal-flow tests include planar Couette flow and a lid-driven cavity. Ehsan Roohi, <i>Journal of Computational Physics</i>, 2026.</p></article>
+</div></section></main>
+<footer><span>Boltzmann-AI</span><span>Ehsan Roohi</span></footer>
+<script>const reel=document.querySelector("#reel");const motion=matchMedia("(prefers-reduced-motion: reduce)");function choosePlayback(){if(motion.matches)reel.pause();else reel.play().catch(()=>{});}choosePlayback();motion.addEventListener("change",choosePlayback);</script>
+</body></html>

@@ -4,6 +4,14 @@ Boltzmann-AI is Ehsan Roohi's research collection for rarefied gas dynamics. It 
 
 The first version includes an equilibrium benchmark, an ideal-gas normal shock relation from FlowMLLab and a catalog of two studies. Each study links to its original publication.
 
+## Research film
+
+[![Gas temperature and streamlines in a lid-driven cavity](docs/assets/hero.jpg)](https://github.com/Ehsan-Roohi/Boltzmann-AI/raw/refs/heads/main/docs/assets/hero.mp4)
+
+[Watch or download the film (MP4, 21 seconds)](https://github.com/Ehsan-Roohi/Boltzmann-AI/raw/refs/heads/main/docs/assets/hero.mp4). To view the research page offline, open [docs/index.html](docs/index.html) after downloading the repository.
+
+The opening shot scans a steady lid-driven cavity field averaged over 48 independent DSMC runs. Surface height and color show the same normalized gas temperature. Streamlines trace the mean velocity. The second shot shows translational temperature in the computed upper half of a Mach 5 argon flow past a circular cylinder. The third shows a rotating atmospheric entry capsule concept. [Cavity research](https://github.com/Ehsan-Roohi/jfm-thermal-cavity-bgk-shakhov-dsmc) · [Cylinder study](https://doi.org/10.1063/5.0334590)
+
 ## Install and run
 
 Use Python 3.10 or later. From the repository directory, run:
