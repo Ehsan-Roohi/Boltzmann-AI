@@ -10,7 +10,7 @@ The first version includes an equilibrium benchmark, an ideal-gas normal shock r
 
 [Watch or download the film (MP4, 21 seconds)](https://github.com/Ehsan-Roohi/Boltzmann-AI/raw/refs/heads/main/docs/assets/hero.mp4). To view the research page offline, open [docs/index.html](docs/index.html) after downloading the repository.
 
-The opening shot scans a steady lid-driven cavity field averaged over 48 independent DSMC runs. Surface height and color show the same normalized gas temperature. Streamlines trace the mean velocity. The second shot shows translational temperature in the computed upper half of a Mach 5 argon flow past a circular cylinder. The third shows a rotating atmospheric entry capsule concept. [Cavity research](https://github.com/Ehsan-Roohi/jfm-thermal-cavity-bgk-shakhov-dsmc) · [Cylinder study](https://doi.org/10.1063/5.0334590)
+The opening shot scans a steady lid-driven cavity field averaged over 48 independent DSMC runs. Surface height and color show the same normalized gas temperature. Streamlines trace the mean velocity. The second shot shows translational temperature in the computed upper half of a Mach 5 argon flow past a circular cylinder. The third shows a rotating atmospheric entry capsule concept. The cavity field comes from Ehsan Roohi’s 48-run lid-driven DSMC benchmark in the author’s archive. [Cylinder study](https://doi.org/10.1063/5.0334590)
 
 ## Install and run
 
